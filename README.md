@@ -109,7 +109,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="sensor_db",
     user="sensor_ultrasonic_user",
-    password="qwerty1234"
+    password="yourDBpassword"
 )
 cursor = conn.cursor()
 
@@ -143,7 +143,7 @@ To set up the PostgreSQL database for this project, follow these steps:
 3. **Create a User**:
    Create a new user with the necessary privileges. Replace your_password with your desired password:
 ```sql
-CREATE USER sensor_ultrasonic_user WITH PASSWORD 'qwerty1234';
+CREATE USER sensor_ultrasonic_user WITH PASSWORD 'yourDBpassword';
 ```
 4. **Grant Privileges**: Grant all privileges on the newly created database to the user:
 ```sql
