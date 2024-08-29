@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # PostgreSQL connection configuration
 conn = psycopg2.connect(
-    host="localhost",
-    database="sensor_db",
+    host="localhost", 
+    database="sensor_db",  
     user="sensor_ultrasonic_user",
-    password="qwerty1234"
+    password="Your db password"
 )
 cursor = conn.cursor()
 
